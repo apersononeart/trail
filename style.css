@@ -1,0 +1,326 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background-color: rgb(254, 254, 254);
+}
+
+@font-face {
+	font-family: "MagazineLetter";
+	src: url(MagazineLetterByBrntlbrnl-Regular.ttf);
+}
+
+@font-face {
+	font-family: "MagazineBold";
+	src: url(Magazine-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Magazine";
+	src: url(Magazine.ttf);
+}
+
+.menu-toggle {
+	display: none;
+}
+
+/* This code designs profile page */
+.profile {
+	width: 100%;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	display: flex;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+.profile-pic img{
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+.profile-desc {
+	padding: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: block;
+	margin-left: 50px;
+	justify-content: center;
+}
+
+.tiny-border {
+	background-color: rgb(80, 131, 117);
+	height: 5px;
+	width: 100px;
+	border-radius: 50px;
+	margin-bottom: 22px;
+}
+
+.profile-desc h1 {
+	font-family: "MagazineBold";
+	font-weight: 800;
+	font-size: 60px;
+	margin-bottom: 2px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+.profile-desc h5 {
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+
+/* this code designs the navbar (header) */
+.navbar {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+
+.navbar-heading {
+	height: 50px;
+	border-radius: 50px;
+	text-align: left;
+}
+
+.navbar ul {
+	position: relative;
+	padding: 0;
+	height: 50px;
+	display: flex;
+	list-style: none;
+}
+
+.navbar ul li {
+	font-family: -apple-system,system-ui,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	letter-spacing: 2px;
+	margin-right: 30px;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	color: rgb(101, 101, 101);
+	transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+	color: rgb(0, 0, 0);
+	font-weight: 600;
+}
+
+.nav-link.active {
+	color: rgb(0, 0, 0);
+	font-weight: 600;
+}
+
+
+/* this code designs self-intro page */
+.self-intro {
+	width: 50%;
+	height: 300px;
+	box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.2);
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	padding: 70px 80px;
+}
+
+.self-intro-desc h1, .self-intro-desc h5{
+	letter-spacing: 1.7px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.self-intro-desc h1 {
+	font-size: 50px;
+}
+
+.self-intro-desc h5{
+	font-size: 30px;
+	line-height: 50px;
+}
+
+.self-intro h5 span {
+	background-color: rgb(245, 245, 145);
+	padding: 2px 4px;
+	border-radius: 2px;
+}
+
+@media screen and (max-width: 350px) {
+	body {
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+		background-color: rgb(254, 254, 254);
+	}
+
+	.profile {
+		width: 100%;
+		margin-top: 50px;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+		display: flex;
+	}
+
+	.profile-pic {
+		border-radius: 50%;
+		height: 150px;
+		width: 150px;
+	}
+	
+	.profile-pic img{
+		border-radius: 50%;
+		height: 150px;
+		width: 150px;
+	}
+
+	.profile-desc {
+		width: 35%;
+		padding: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+		display: block;
+		margin-left: 10px;
+		justify-content: center;
+	}
+	
+	.tiny-border {
+		background-color: rgb(80, 131, 117);
+		height: 4px;
+		width: 30px;
+		border-radius: 50px;
+	}
+
+	.profile-desc h1 {
+		font-family: "MagazineBold";
+		font-weight: 900;
+		font-size: 24px;
+		margin-bottom: 5px;
+		letter-spacing: 1px;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+
+	.navbar {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+	}
+
+	.navbar-heading {
+		height: 50px;
+		border-radius: 50px;
+		text-align: left;
+		padding: 0;
+		position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #ffffff;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s all;
+	}
+	
+	.navbar ul {
+		position: relative;
+		padding: 0;
+		height: 50px;
+		list-style: none;
+        display: block;
+        text-align: center;
+	}
+	
+	.navbar ul li {
+		width: 100%;
+		position: relative;
+		font-family: -apple-system,system-ui,"BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 10px;
+		letter-spacing: 1px;
+		line-height: 15px;
+		margin-right: 0px;
+	}
+	
+	.navbar ul li a {
+		text-decoration: none;
+		color: rgb(101, 101, 101);
+		transition: 0.5s;
+	}
+	
+	.navbar ul li a:hover {
+		color: rgb(0, 0, 0);
+		font-weight: 600;
+	}
+	
+	.nav-link.active {
+		color: rgb(0, 0, 0);
+		font-weight: 600;
+	}
+	
+	.self-intro {
+		width: 70%;
+		height: auto;
+		box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.2);
+		border-radius: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		padding: 20px 30px;
+	}
+	
+	.self-intro-desc h1, .self-intro-desc h5{
+		width: 100%;
+		letter-spacing: 1.7px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	
+	.self-intro-desc h1 {
+		font-size: 18px;
+	}
+	
+	.self-intro-desc h5{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	
+	.self-intro h5 span {
+		background-color: rgb(245, 245, 145);
+		padding: 2px 4px;
+		border-radius: 2px;
+	}
+
+    .menu-toggle {
+        display: block;
+		margin: 10px;
+    }
+
+    .navbar-heading.active {
+        left: 0;
+    }
+
+    .navbar-heading a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        color: rgb(255, 255, 255);
+    }
+}
